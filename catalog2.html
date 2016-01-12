@@ -1,0 +1,746 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Нэкс</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1020, user-scalable=yes">
+	<!--<link href="./favicon.ico" rel="shortcut icon">-->
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="./js/jquery.js"></script>
+	<!--[if IE 8]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+		<script src="./js/ie8.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<img src="./img/logo.png" width="188" height="83" class="logo" alt="">
+			<h5 class="address">
+				<span>г. Барнаул, проезд Южный, 10, корпус 1</span>
+				<span>пн-чт: 8.00-17.00, пт: 8.00-16.00</span>
+			</h5>
+			<h5 class="lk-open"><span>Личный кабинет</span></h5>
+			<ul class="lk">
+				<li><a href="#" data-open="login">Вход</a></li>
+				<li><a href="#">Регистрация</a></li>
+				<li><a href="#">Личный кабинет</a></li>
+				<li><a href="#">Корзина</a></li>
+				<li><a href="#">Мои заказы</a></li>
+			</ul>
+			<h4 class="phone"><a href="tel:+73852502409">8 (3852) 502-409</a>, <a href="tel:+79030739873">8 (903) 073-98-73</a></h4>
+			<ul class="feedback">
+				<li><span data-open="call">Заказать звонок</span></li>
+				<li><span data-open="ask">Задать вопрос</span></li>
+			</ul>
+			<div class="search">
+				<p><input type="text" placeholder="Более 50 000 товаров"></p>
+				<button></button>
+			</div>
+			<div class="basket">
+				<a href="#">
+					<h5>2</h5>
+					<h4><span>4 450, 50</span> руб.</h4>
+					<h6>Товаров для сравнения: <span>0</span></h6>
+				</a>
+			</div>
+		</header>
+		<nav>
+			<div>
+			<ul>
+				<li class="active">
+					<a href="#">Каталог</a>
+					<div>
+						<div>
+							<div class="sub">
+								<ul>
+									<li class="opened"><a href="#"><span>Отделочные и строительные материалы</span></a></li>
+									<li><a href="#"><span>Лакокрасочные материалы</span></a></li>
+									<li><a href="#"><span>Хозяйственные товары</span></a></li>
+									<li><a href="#"><span>Инструменты и крепеж</span></a></li>
+									<li><a href="#"><span>Сантехника и вентиляция</span></a></li>
+								</ul>
+							</div>
+							<div class="core">
+								<ul>
+									<li>
+										<ul>
+											<li><h4>Линолеум</h4></li>
+											<li><a href="#">Линолеум Алекс-3 на ТЗИ</a></li>
+											<li><a href="#">Линолеум Комитекс</a></li>
+											<li><a href="#">Линолеум Ютэкс</a></li>
+											<li><a href="#">Средства для ремонта</a></li>
+										</ul>
+										<ul>
+											<li><h4>Монтажные пены, герметики</h4></li>
+											<li><a href="#">Герметики</a></li>
+											<li><a href="#">Жидкие гвозди</a></li>
+											<li><a href="#">Пены</a></li>
+											<li><a href="#">Пистолеты и комплектующие</a></li>
+											<li><h6>Плинтус напольный</h6></li>
+											<li><a href="#">Плинтус с кабель-каналом RICO и комплектующие</a></li>
+											<li><a href="#">Плинтус с кабель-каналом ЭЛСИ и комплектующие</a></li>
+											<li><a href="#">Плинтус с кабель-каналом CEZAR и комплектующие</a></li>
+										</ul>
+										<ul>
+											<li><h4>Панели</h4></li>
+											<li><a href="#">Панели МДФ Декор панель</a></li>
+											<li><a href="#">Панели МДФ Кроностар</a></li>
+											<li><a href="#">Панели отделочные ДВП</a></li>
+											<li><a href="#">Панели ПВХ</a></li>
+											<li><a href="#">Панели стеновые</a></li>
+											<li><a href="#">Комплектуюющие для панелей</a></li>
+											<li><h6>Погонаж (ПВХ)</h6></li>
+											<li><a href="#">Бордюр на ванну</a></li>
+											<li><a href="#">Кабель-канал ПВХ и аксессуары</a></li>
+											<li><a href="#">Наличники ПВХ РИКО</a></li>
+											<li><a href="#">Погонаж для кафеля</a></li>
+											<li><a href="#">Уголки белые</a></li>
+											<li><a href="#">Уголки цветные</a></li>
+											<li><a href="#">Универсальный уголок RICO Leo</a></li>
+											<li><h6>Деревянный погонаж</h6></li>
+										</ul>
+										<ul>
+											<li><h4>Потолочная плитка</h4></li>
+											<li><a href="#">Плинтус инжекционный KENOPOL, Glanzepol</a></li>
+											<li><a href="#">Плинтуса HMC</a></li>
+											<li><a href="#">Солид (WIKIBAU)</a></li>
+											<li><a href="#">Флекс-колор</a></li>
+											<li><a href="#">Формат</a></li>
+											<li><h6>Расходные материалы</h6></li>
+											<li><a href="#">Изолента</a></li>
+											<li><a href="#">Лента двухстронняя</a></li>
+											<li><a href="#">Лента стеклотканевая, стрепянка</a></li>
+											<li><a href="#">Ленты солярные</a></li>
+											<li><a href="#">Ленты ФАРБЕН</a></li>
+											<li><a href="#">Перчатки резиновые</a></li>
+											<li><a href="#">Перчатки, рукавицы</a></li>
+											<li><a href="#">Скотч</a></li>
+											<li><a href="#">Уплотнители</a></li>
+											<li><a href="#">Утеплители</a></li>
+											<li><h6>Сетка-рабица</h6></li>
+										</ul>
+										<ul>
+											<li><h6>Сухие смеси</h6></li>
+											<li><a href="#">Диола</a></li>
+											<li><a href="#">Замазка рамная</a></li>
+											<li><a href="#">Известь, известковая паста</a></li>
+											<li><a href="#">Клеи и составы для печей и каминов</a></li>
+											<li><a href="#">Сухие смеси ИНХИМ (Польша)</a></li>
+											<li><a href="#">Сухие смеси КНАУФ, ЮНИС, BERGAUF</a></li>
+											<li><a href="#">Терракот</a></li>
+											<li><h6>Тепло-гидро-пароизоляция</h6></li>
+											<li><h4>Порожки</h4></li>
+											<li><a href="#">Профиль Лука</a></li>
+											<li><a href="#">Профиль ГОСТ</a></li>
+											<li><a href="#">Профиль Альфа</a></li>
+											<li><a href="#">Профиль гибкий Flex</a></li>
+										</ul>
+										<ul>
+											<li><h4>Строительный клей</h4></li>
+											<li><a href="#">Клей для напольных покрытий, холодная сварка</a></li>
+											<li><a href="#">Клей для потолочной плитки</a></li>
+											<li><a href="#">Клей для обоев</a></li>
+											<li><a href="#">Клей ПВА, бутиласт</a></li>
+											<li><a href="#">Клей для клеевого пистолета (Из Инстр. Парктика)</a></li>
+										</ul>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<ul>
+											<li><h4>Подменю 2</h4></li>
+											<li><a href="#">Пункт 1</a></li>
+											<li><a href="#">Пункт 2</a></li>
+											<li><a href="#">Пункт 3</a></li>
+											<li><a href="#">Пункт 4</a></li>
+											<li><a href="#">Пункт 5</a></li>
+										</ul>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<ul>
+											<li><h4>Подменю 3</h4></li>
+											<li><a href="#">Пункт 1</a></li>
+											<li><a href="#">Пункт 2</a></li>
+											<li><a href="#">Пункт 3</a></li>
+											<li><a href="#">Пункт 4</a></li>
+											<li><a href="#">Пункт 5</a></li>
+										</ul>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<ul>
+											<li><h4>Подменю 4</h4></li>
+											<li><a href="#">Пункт 1</a></li>
+											<li><a href="#">Пункт 2</a></li>
+											<li><a href="#">Пункт 3</a></li>
+											<li><a href="#">Пункт 4</a></li>
+											<li><a href="#">Пункт 5</a></li>
+										</ul>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<ul>
+											<li><h4>Подменю 5</h4></li>
+											<li><a href="#">Пункт 1</a></li>
+											<li><a href="#">Пункт 2</a></li>
+											<li><a href="#">Пункт 3</a></li>
+											<li><a href="#">Пункт 4</a></li>
+											<li><a href="#">Пункт 5</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li><a href="#">Новинки</a></li>
+				<li><a href="#">Распродажа</a></li>
+				<li><a href="#">Наши магазины</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Школа ремонта</a></li>
+				<li><a href="#">Компания</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li class="download"><a href="#">Скачать прайс</a></li>
+			</ul>
+			</div>
+		</nav>
+		<div class="main">
+			<div>
+				<div class="lc">
+					<ul class="nav-c">
+						<li>
+							<h3>Отделочные и строительные материалы</h3>
+							<ul>
+								<li>
+									<a href="#"><span>Линолеум</span></a>
+									<ul>
+										<li>
+											<h5>Плинтус с кабель-каналом RICO и комплектующие</h5>
+											<ul>
+												<li><a href="#">Монтажный бокс</a></li>
+												<li><a href="#">Плинтус кабель-канал RICO</a></li>
+												<li><a href="#">Плинтус кабель-канал RICO Capri</a></li>
+												<li><a href="#">Плинтус кабель-канал RICO Leo</a></li>
+												<li><a href="#">Соединитель RICO</a></li>
+												<li><a href="#">Соединитель RICO Capri</a></li>
+												<li><a href="#">Соединитель RICO Leo</a></li>
+												<li><a href="#">Торцевик RICO</a></li>
+												<li><a href="#">Торцевик RICO Capri</a></li>
+												<li><a href="#">Торцевик RICO Leo</a></li>
+												<li><a href="#">Уголки RICO</a></li>
+												<li><a href="#">Уголки RICO Capri</a></li>
+												<li><a href="#">Уголки RICO Leo</a></li>
+											</ul>
+										</li>
+										<li>
+											<h5>Плинтус с кабель-каналом ЭЛСИ и комплектующие</h5>
+											<ul>
+												<li><a href="#">Заглушки ЭЛСИ</a></li>
+												<li><a href="#">Плинтус напольный ЭЛСИ</a></li>
+												<li><a href="#">Соединители ЭЛСИ</a></li>
+												<li><a href="#">Уголки ЭЛСИ</a></li>
+											</ul>
+										</li>
+										<li>
+											<h5>Плинтус с кабель-каналом CEZAR и комплектующие</h5>
+											<ul>
+												<li><a href="#">Заглушки Cezar</a></li>
+												<li><a href="#">Плинтус напольный Cezar</a></li>
+												<li><a href="#">Соединители Cezar</a></li>
+												<li><a href="#">Уголки Cezar</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="#"><span>Плинтус напольный</span></a></li>
+								<li><a href="#"><span>Панели</span></a></li>
+								<li><a href="#"><span>Погонаж (ПВХ)</span></a></li>
+								<li><a href="#"><span>Деревянный погонаж</span></a></li>
+								<li><a href="#"><span>Потолочная плитка</span></a></li>
+								<li><a href="#"><span>Расходные материалы</span></a></li>
+								<li><a href="#"><span>Сетка-рабица</span></a></li>
+								<li><a href="#"><span>Строительный клей</span></a></li>
+								<li><a href="#"><span>Сухие смеси</span></a></li>
+								<li><a href="#"><span>Тепло-гидро-пароизоляция</span></a></li>
+							</ul>
+							<h5><span><em>Смотреть все</em></span></h5>
+						</li>
+						<li>
+							<h3>Лакокрасочные материалы</h3>
+							<ul>
+								<li><a href="#"><span>Водно-дисперсионные материалы</span></a></li>
+								<li class="active"><a href="#"><span>Эмали</span></a></li>
+								<li>
+									<a href="#"><span>Колеры</span></a>
+									<ul>
+										<li>
+											<h5>Плинтус с кабель-каналом RICO и комплектующие</h5>
+											<ul>
+												<li><a href="#">Монтажный бокс</a></li>
+												<li><a href="#">Плинтус кабель-канал RICO</a></li>
+												<li><a href="#">Плинтус кабель-канал RICO Capri</a></li>
+												<li><a href="#">Плинтус кабель-канал RICO Leo</a></li>
+												<li><a href="#">Соединитель RICO</a></li>
+												<li><a href="#">Соединитель RICO Capri</a></li>
+												<li><a href="#">Соединитель RICO Leo</a></li>
+												<li><a href="#">Торцевик RICO</a></li>
+												<li><a href="#">Торцевик RICO Capri</a></li>
+												<li><a href="#">Торцевик RICO Leo</a></li>
+												<li><a href="#">Уголки RICO</a></li>
+												<li><a href="#">Уголки RICO Capri</a></li>
+												<li><a href="#">Уголки RICO Leo</a></li>
+											</ul>
+										</li>
+										<li>
+											<h5>Плинтус с кабель-каналом ЭЛСИ и комплектующие</h5>
+											<ul>
+												<li><a href="#">Заглушки ЭЛСИ</a></li>
+												<li><a href="#">Плинтус напольный ЭЛСИ</a></li>
+												<li><a href="#">Соединители ЭЛСИ</a></li>
+												<li><a href="#">Уголки ЭЛСИ</a></li>
+											</ul>
+										</li>
+										<li>
+											<h5>Плинтус с кабель-каналом CEZAR и комплектующие</h5>
+											<ul>
+												<li><a href="#">Заглушки Cezar</a></li>
+												<li><a href="#">Плинтус напольный Cezar</a></li>
+												<li><a href="#">Соединители Cezar</a></li>
+												<li><a href="#">Уголки Cezar</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="#"><span>Защита для дерева и камня, лак</span></a></li>
+								<li><a href="#"><span>Мастики, жидкое стекло</span></a></li>
+								<li><a href="#"><span>Растворители</span></a></li>
+							</ul>
+							<h5><span><em>Смотреть все</em></span></h5>
+						</li>
+						<li>
+							<h3>Хозяйственные товары</h3>
+							<ul>
+								<li><a href="#"><span>Бытовая техника</span></a></li>
+								<li><a href="#"><span>Карнизы и шторы</span></a></li>
+								<li><a href="#"><span>Клеенка</span></a></li>
+								<li><a href="#"><span>Коврики для ванной</span></a></li>
+								<li><a href="#"><span>Пластмассовые изделия</span></a></li>
+								<li><a href="#"><span>Пленка самоклеящаяся</span></a></li>
+								<li><a href="#"><span>Принадлежности для бани</span></a></li>
+								<li><a href="#"><span>Принадлежности для дома</span></a></li>
+								<li><a href="#"><span>Садово-огородный инвентарь</span></a></li>
+								<li><a href="#"><span>Снегоуборочный инвентарь</span></a></li>
+								<li><a href="#"><span>Товары для отдыха и туризма</span></a></li>
+								<li><a href="#"><span>Печи</span></a></li>
+								<li><a href="#"><span>Спецодежда и обувь</span></a></li>
+								<li><a href="#"><span>Хозяйственный клей</span></a></li>
+							</ul>
+							<h5><span><em>Смотреть все</em></span></h5>
+						</li>
+						<li>
+							<h3>Инструменты и крепеж</h3>
+							<ul>
+								<li><a href="#"><span>Отделочный инструмент</span></a></li>
+								<li><a href="#"><span>Слесарный инструмент</span></a></li>
+								<li><a href="#"><span>Столярный инструмент</span></a></li>
+								<li><a href="#"><span>Режущий инструмент</span></a></li>
+								<li><a href="#"><span>Измерительный инструмент</span></a></li>
+								<li><a href="#"><span>Лестницы и стремянки</span></a></li>
+								<li><a href="#"><span>Силовое оборудование</span></a></li>
+								<li><a href="#"><span>Насосы</span></a></li>
+								<li><a href="#"><span>Сварочное оборудование</span></a></li>
+								<li><a href="#"><span>Пневматическое оборудование</span></a></li>
+								<li><a href="#"><span>Садовая техника, бензопилы</span></a></li>
+								<li><a href="#"><span>Ящики для инструментов</span></a></li>
+								<li><a href="#"><span>Средства защиты труда</span></a></li>
+								<li><a href="#"><span>Остальной инструмент</span></a></li>
+								<li><a href="#"><span>Крепеж</span></a></li>
+							</ul>
+							<h5><span><em>Смотреть все</em></span></h5>
+						</li>
+						<li>
+							<h3>Сантехника и вентиляция</h3>
+							<ul>
+								<li><a href="#"><span>Сантехника</span></a></li>
+								<li><a href="#"><span>Вентиляционные системы</span></a></li>
+							</ul>
+							<h5><span><em>Смотреть все</em></span></h5>
+						</li>
+					</ul>
+					<div class="school-p">
+						<h3>Школа ремонта НЭКС</h3>
+						<ul>
+							<li>
+								<a href="#">
+									<div>
+										<img src="./pic/school_p1.jpg" width="109" height="118" alt="">
+									</div>
+									<p>Как выбрать краску</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>
+										<img src="./pic/school_p2.jpg" width="109" height="118" alt="">
+									</div>
+									<p>Подготовка поверхности<br> к покраске</p>
+								</a>
+							</li>
+						</ul>
+						<h5><a href="#"><span>Перейти в раздел</span></a></h5>
+					</div>
+				</div>
+				<div class="rc">
+					<div class="breadcrumbs">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Лакокрасочные материалы</a></li>
+							<li>Эмали</li>
+						</ul>
+					</div>
+					<div class="catalog">
+						<ul class="opened">
+							<li><span><a href="#">Эмаль ПФ 115 и др.</a></span></li>
+							<li><span><a href="#">Эмаль для пола ПФ 226</a></span></li>
+							<li><span><a href="#">MASTER Защита для металла</a></span></li>
+							<li><span><a href="#">Акриловая</a></span></li>
+							<li><span><a href="#">Грунт ГФ-021</a></span></li>
+							<li><span><a href="#">Грунт-эмаль по ржавчине</a></span></li>
+							<li><span><a href="#">Декор</a></span></li>
+							<li><span><a href="#">Для радиаторов</a></span></li>
+							<li><span><a href="#">МА-15</a></span></li>
+							<li><span><a href="#">НЦ 132</a></span></li>
+							<li><span><a href="#">Серебрянка и пр</a></span></li>
+							<li><span><a href="#">Спец.эмали и краски</a></span></li>
+							<li><span><a href="#">Эмали аэрозольные</a></span></li>
+							<li><span><a href="#">Эмаль для автомат. колеровки</a></span></li>
+						</ul>
+						<div class="description">
+							<h1>Эмали</h1>
+							<p>Область применения: для окрашивания предварительно подготовленных поверхностей фасадов зданий, помещений с повышенной влажностью, а также внутренних с высокими гигиеническими требованиями (больницы, детские и лечебно-профилактические учреждения, предприятия пищевой и медицинской промышленности), стен и потолков в бассейнах, кухнях, ванных и жилых комнатах.</p>
+						</div>
+						<div class="filter-b">
+							<h5>Сортировать по:</h5>
+							<div class="sort">
+								<h5>Цена</h5>
+								<ul>
+									<li><span class="up"></span></li>
+									<li><span class="down"></span></li>
+								</ul>
+							</div>
+							<div class="view">
+								<h5>Список:</h5>
+								<ul>
+									<li class="active"><span class="grid"></span></li>
+									<li><span class="table"></span></li>
+								</ul>
+							</div>
+						</div>
+						<table class="cat-t">
+							<thead>
+								<tr>
+									<th>Артикул</th>
+									<th>Наименование товара</th>
+									<th>Цена</th>
+									<th>Сравнение</th>
+									<th>В корзину</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>056247</td>
+									<td><a href="#">Эмаль д/окон 2,7л. белая шелк.мат Jobi FENSTERLACK К33/3</a></td>
+									<td>407, 00 руб.</td>
+									<td><span>Добавить<br> к сравнению</span></td>
+									<td>
+										<span class="quantity-e">
+											<em class="minus"></em>
+											<input type="text" value="2">
+											<em class="plus"></em>
+										</span>
+										<span class="add"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>056245</td>
+									<td><a href="#">Эмаль ПФ 115 бежевая 0,9 кг/ (г.Таганрок)/14</a></td>
+									<td>118, 00 руб.</td>
+									<td><span>Добавить<br> к сравнению</span></td>
+									<td>
+										<span class="quantity-e">
+											<em class="minus"></em>
+											<input type="text" value="2">
+											<em class="plus"></em>
+										</span>
+										<span class="add"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>056246</td>
+									<td><a href="#">Эмал д/окон и дверей с/б 0,9кг ПФ 115/14 шт</a></td>
+									<td>202, 85 руб.</td>
+									<td><span>Добавить<br> к сравнению</span></td>
+									<td>
+										<span class="quantity-e">
+											<em class="minus"></em>
+											<input type="text" value="2">
+											<em class="plus"></em>
+										</span>
+										<span class="add"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>056246</td>
+									<td><a href="#">Эмаль ПФ 115 бежевая 1,9 кг/(г.Таганрог)/6</a></td>
+									<td>350, 00 руб.</td>
+									<td><span>Добавить<br> к сравнению</span></td>
+									<td>
+										<span class="quantity-e">
+											<em class="minus"></em>
+											<input type="text" value="2">
+											<em class="plus"></em>
+										</span>
+										<span class="add"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>056247</td>
+									<td><a href="#">Эмаль д/окон 2,7л. белая шелк.мат Jobi FENSTERLACK К33/3</a></td>
+									<td>407, 00 руб.</td>
+									<td><span>Добавить<br> к сравнению</span></td>
+									<td>
+										<span class="quantity-e">
+											<em class="minus"></em>
+											<input type="text" value="2">
+											<em class="plus"></em>
+										</span>
+										<span class="add"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>056245</td>
+									<td><a href="#">Эмаль ПФ 115 бежевая 0,9 кг/ (г.Таганрок)/14</a></td>
+									<td>118, 00 руб.</td>
+									<td><span>Добавить<br> к сравнению</span></td>
+									<td>
+										<span class="quantity-e">
+											<em class="minus"></em>
+											<input type="text" value="2">
+											<em class="plus"></em>
+										</span>
+										<span class="add"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>056246</td>
+									<td><a href="#">Эмал д/окон и дверей с/б 0,9кг ПФ 115/14 шт</a></td>
+									<td>202, 85 руб.</td>
+									<td><span>Добавить<br> к сравнению</span></td>
+									<td>
+										<span class="quantity-e">
+											<em class="minus"></em>
+											<input type="text" value="2">
+											<em class="plus"></em>
+										</span>
+										<span class="add"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>056246</td>
+									<td><a href="#">Эмаль ПФ 115 бежевая 1,9 кг/(г.Таганрог)/6</a></td>
+									<td>350, 00 руб.</td>
+									<td><span>Добавить<br> к сравнению</span></td>
+									<td>
+										<span class="quantity-e">
+											<em class="minus"></em>
+											<input type="text" value="2">
+											<em class="plus"></em>
+										</span>
+										<span class="add"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>056247</td>
+									<td><a href="#">Эмаль д/окон 2,7л. белая шелк.мат Jobi FENSTERLACK К33/3</a></td>
+									<td>407, 00 руб.</td>
+									<td><span>Добавить<br> к сравнению</span></td>
+									<td>
+										<span class="quantity-e">
+											<em class="minus"></em>
+											<input type="text" value="2">
+											<em class="plus"></em>
+										</span>
+										<span class="add"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>056245</td>
+									<td><a href="#">Эмаль ПФ 115 бежевая 0,9 кг/ (г.Таганрок)/14</a></td>
+									<td>118, 00 руб.</td>
+									<td><span>Добавить<br> к сравнению</span></td>
+									<td>
+										<span class="quantity-e">
+											<em class="minus"></em>
+											<input type="text" value="2">
+											<em class="plus"></em>
+										</span>
+										<span class="add"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>056246</td>
+									<td><a href="#">Эмал д/окон и дверей с/б 0,9кг ПФ 115/14 шт</a></td>
+									<td>202, 85 руб.</td>
+									<td><span>Добавить<br> к сравнению</span></td>
+									<td>
+										<span class="quantity-e">
+											<em class="minus"></em>
+											<input type="text" value="2">
+											<em class="plus"></em>
+										</span>
+										<span class="add"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>056246</td>
+									<td><a href="#">Эмаль ПФ 115 бежевая 1,9 кг/(г.Таганрог)/6</a></td>
+									<td>350, 00 руб.</td>
+									<td><span>Добавить<br> к сравнению</span></td>
+									<td>
+										<span class="quantity-e">
+											<em class="minus"></em>
+											<input type="text" value="2">
+											<em class="plus"></em>
+										</span>
+										<span class="add"></span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="pages-b">
+							<ul>
+								<li class="prev"><a href="#"></a></li>
+								<li class="backward"><a href="#">Назад</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li class="active"><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li class="forward"><a href="#">Вперед</a></li>
+								<li class="next"><a href="#"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<footer>
+		<div class="address">
+			<div>
+				<ul>
+					<li>г. Барнаул, проезд южный 10, корпус 1</li>
+					<li>пн-чт: 8.00-17.00, пт: 8.00-16.00</li>
+				</ul>
+			</div>
+		</div>
+		<h5 class="open-map"><span>Карта</span></h5>
+		<div class="map">
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=yh7ulR0_Yl_ZlmUWGllSfC15BxFSThJu&width=100%&height=404&lang=ru_RU&sourceType=constructor"></script>
+		</div>
+		<div class="core">
+			<ul class="nav lc">
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Новинки</a></li>
+				<li><a href="#">Распродажа</a></li>
+				<li><a href="#">Наши магазины</a></li>
+			</ul>
+			<ul class="nav rc">
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Школа ремонта</a></li>
+				<li><a href="#">Компания</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<h4 class="phone"><a href="tel:+73852502409">8 (3852) 502-409</a>, <a href="tel:+79030739873">8 (903) 073-98-73</a></h4>
+			<div class="feedback">
+				<ul>
+					<li><span data-open="call">Заказать звонок</span></li>
+					<li><span data-open="ask">Задать вопрос</span></li>
+				</ul>
+			</div>
+			<p class="copy">Группа компаний «НЭКС» © 2015г.</p>
+			<h5 class="author">Разработка сайта — <a href="http://letsrock.pro" target="_blank"><img src="./img/letsrock_logo.png" width="89" height="20"></a></h5>
+		</div>
+	</footer>
+	<div class="fade"></div>
+	<div class="modal" data-target="login">
+		<h3>Пожалуйста, авторизуйтесь</h3>
+			<form class="standart">
+			<p>
+				<span><em>Электронная почта <em>*</em></em></span>
+				<input type="text" value="">
+			</p>
+			<p>
+				<span><em>Пароль <em>*</em></em></span>
+				<input type="text" value="">
+			</p>
+			<h6><span>*</span> - поля обязательные к заполнению</h6>
+			<h5>
+				<a href="#">Забыли пароль?</a>
+				<a href="#">Регистрация</a>
+			</h5>
+			<button>Войти</button>
+		</form>
+	</div>
+	<div class="modal" data-target="call">
+		<h3>Заказать звонок</h3>
+		<form class="standart">
+			<p>
+				<span><em>Представьтесь, пожалуйста <em>*</em></em></span>
+				<input type="text" value="">
+			</p>
+			<p>
+				<span><em>Телефон <em>*</em></em></span>
+				<input type="text" value="">
+			</p>
+			<h6><span>*</span> - поля обязательные к заполнению</h6>
+			<button>Перезвоните мне</button>
+		</form>
+	</div>
+	<div class="modal" data-target="ask">
+		<h3>Задать вопрос</h3>
+		<form class="standart">
+			<p>
+				<span><em>Представьтесь, пожалуйста <em>*</em></em></span>
+				<input type="text" value="">
+			</p>
+			<p>
+				<span><em>Телефон <em>*</em></em></span>
+				<input type="text" value="">
+			</p>
+			<p>
+				<span><em>E-mail <em>*</em></em></span>
+				<input type="text" value="">
+			</p>
+			<p>
+				<span><em>Ваш вопрос <em>*</em></em></span>
+				<textarea cols="80" rows="5"></textarea>
+			</p>
+			<h6><span>*</span> - поля обязательные к заполнению</h6>
+			<button>Задать вопрос</button>
+		</form>
+	</div>
+	<script src="./js/easing.js"></script>
+	<script src="./js/jcarousel.js"></script>
+	<script src="./js/mobile.js"></script>
+	<script src="./js/slides.js"></script>
+	<script src="./js/dynamic.js"></script>
+</body>
+</html>
