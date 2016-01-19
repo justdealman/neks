@@ -146,6 +146,22 @@ $(document).ready(function() {
 			$('.slider .prev').trigger('click');
 		});
 	}
+	$('nav > div > ul > li > div').parent().hover(
+		function() {
+			$(this).children('div').stop(true,true).delay(300).fadeIn(300);
+		},
+		function() {
+			$(this).children('div').stop(true,true).delay(300).fadeOut(300);
+		}
+	);
+	$('.nav-c > li > ul > li > ul').parent().hover(
+		function() {
+			$(this).children('ul').stop(true,true).delay(200).fadeIn(200);
+		},
+		function() {
+			$(this).children('ul').stop(true,true).delay(300).fadeOut(200);
+		}
+	);
 	if ( $('nav > div > ul > li > div .core > ul > li').length > 0 ) {
 		$('nav > div > ul > li > div .core > ul > li').each(function() {
 			var p = $(this);
@@ -200,6 +216,19 @@ $(document).ready(function() {
 	if ( $('input[type="checkbox"]').length > 0 ) {
 		$('input[type="checkbox"]').uniform();
 	}
+	$('.product-i .tabs > ul li a').bind('click', function(e) {
+		e.preventDefault();
+		$(this).parents('ul').siblings('[data-desc="'+$(this).attr('href')+'"]').show().siblings('[data-desc]').hide();
+		$(this).parent().addClass('active').siblings().removeClass();
+	}).filter(':first').click();
+	if ( $('.catalog-l').length > 0 ) {
+		$('.catalog-l h2 span img').each(function() {
+			$(this).css({
+				'margin-top': (42-$(this).attr('height'))/2+'px',
+				'opacity': '1'
+			});
+		});
+	}
 });
 $(window).resize(function() {
 	if ( $('.slider').length > 0 ) {
@@ -219,6 +248,36 @@ $(window).load(function() {
 			}
 		});
 		$('.school-b .grid li h5').css({
+			'opacity': '1'
+		});
+	}
+	if ( $('.catalog-l > ul').length > 0 ) {
+		$('.catalog-l > ul').each(function() {
+			var p = $(this);
+			var v = p.children('li').size();
+			if ( v > 3 ) {
+				v = 3;
+			}
+			for ( var i = 1; i <= v; i++ ) {
+				p.append('<span class="span-v num'+i+'"></span>');
+				var li = p.children('li:nth-child('+i+')');
+				p.find('.span-v.num'+i).css({
+					'left': li.position().left+li.outerWidth()+'px',
+					'height': p.outerHeight()-52+'px'
+				});
+			}
+			if ( p.children('li').size() > 4 ) {
+				var h = Math.floor((p.children('li').size()-1)/4);
+				for ( var i = 1; i <= h; i++ ) {
+					p.append('<span class="span-h num'+i+'"></span>');
+					var li = p.children('li:nth-child('+eval(i*4+1)+')');
+					p.find('.span-h.num'+i+'').css({
+						'top': li.position().top+'px'
+					});
+				}
+			}
+		});
+		$('.catalog-l > ul .span-v, .catalog-l > ul .span-h').css({
 			'opacity': '1'
 		});
 	}
