@@ -174,6 +174,9 @@ $(document).ready(function() {
 			}
 		}, 500);
 	});
+	$('.nav-c > li > ul > li > ul').each(function() {
+		$(this).parent().addClass('sub');
+	});
 	$('.nav-c > li > ul > li > ul').parent().hover(
 		function() {
 			$(this).children('ul').stop(true,true).delay(200).fadeIn(200);

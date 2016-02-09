@@ -742,7 +742,7 @@ nav > div > ul > li > div .core > ul > li > ul > li:first-child > h6 {
 	padding:6px 17px 5px 0;
 	border-top:1px solid #267ebb;
 }
-.nav-c > li > ul > li > a > span:after {
+.nav-c > li > ul > li.sub > a > span:after {
 	content:'';
 	position:absolute;
 	right:0;
@@ -770,7 +770,7 @@ nav > div > ul > li > div .core > ul > li > ul > li:first-child > h6 {
 .nav-c > li > ul > li:hover > a > span, .nav-c > li > ul > li.active > a > span {
 	border-top:1px solid transparent;
 }
-.nav-c > li > ul > li:hover > a > span:after, .nav-c > li > ul > li.active > a > span:after {
+.nav-c > li > ul > li.sub:hover > a > span:after, .nav-c > li > ul > li.sub.active > a > span:after {
 	background:url('../img/nav_c_arrow.png') no-repeat right -12px;
 }
 .nav-c > li > ul > li {
@@ -825,7 +825,7 @@ nav > div > ul > li > div .core > ul > li > ul > li:first-child > h6 {
 	left:284px;
 	top:-44px;
 	width:677px;
-	padding:13px 50px 49px 40px;
+	padding:31px 50px 33px 40px;
 	margin:0;
 	background:#ffffff;
 	-webkit-box-shadow:0 5px 5px rgba(0,0,0,0.1);
@@ -850,17 +850,18 @@ nav > div > ul > li > div .core > ul > li > ul > li:first-child > h6 {
 	margin-left:-13px;
 	background:#b2b2b2;
 }
-.nav-c > li > ul > li > ul > li > h5 {
+.nav-c > li > ul > li > ul > li h5 {
 	color:#484848;
 	font-size:16px;
 	line-height:17px;
 	font-weight:normal;
     font-family:'Roboto Condensed', sans-serif;
-	padding:0;
-	margin:18px 0 0;
+	padding:0 0 8px;
+	margin:0;
 }
 .nav-c > li > ul > li > ul > li > ul {
-	margin:12px 0 0;
+	padding:0 0 12px;
+	margin:0;
 	-webkit-column-break-inside:avoid;
 	page-break-inside:avoid;
 	break-inside:avoid;
@@ -1009,7 +1010,7 @@ nav > div > ul > li > div .core > ul > li > ul > li:first-child > h6 {
 	position:absolute;
 	left:0;
 	bottom:39px;
-	z-index:20;
+	z-index:15;
 	width:616px;
 	text-align:center;
 	margin:0;
