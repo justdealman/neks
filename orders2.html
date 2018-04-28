@@ -3,7 +3,7 @@
 <head>
 	<title>Нэкс</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=1020, user-scalable=yes">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
 	<!--<link href="./favicon.ico" rel="shortcut icon">-->
 	<link href="./css/style.css" rel="stylesheet">
 	<script src="./js/jquery.js"></script>
@@ -15,7 +15,7 @@
 <body>
 	<div class="wrapper">
 		<header>
-			<img src="./img/logo.png" width="188" height="83" class="logo" alt="">
+			<a href="#" class="logo"></a>
 			<h5 class="address">
 				<span>г. Барнаул, проезд Южный, 10, корпус 1</span>
 				<span>пн-чт: 8.00-17.00, пт: 8.00-16.00</span>
@@ -246,6 +246,20 @@
 								<td>2 шт.</td>
 								<td>700, 00 руб.</td>
 							</tr>
+							<tr>
+								<td>
+									<div>
+										<img src="./pic/basket1.jpg" width="68" height="68" alt="">
+									</div>
+								</td>
+								<td>
+									<a href="#">Ламинат Holzmeister Trend Дуб Венге 527</a>
+									<span>Артикул: 056247</span>
+								</td>
+								<td>350, 00 руб.</td>
+								<td>2 шт.</td>
+								<td>700, 00 руб.</td>
+							</tr>
 						</tbody>
 					</table>
 					<div class="total">
@@ -365,6 +379,80 @@
 			<h6><span>*</span> - поля обязательные к заполнению</h6>
 			<button>Задать вопрос</button>
 		</form>
+	</div>
+	<div class="nav-m">
+		<span class="nav-m--close"></span>
+		<div class="nav-m__row" data-state="0">
+			<div class="nav-m__content">
+				<div class="nav-m__catalog">
+					<a href="#" data-state-set="1">Каталог товаров</a>
+				</div>
+				<div class="nav-m__links">
+					<a href="#">Новинки</a>       
+					<a href="#">Распродажа</a>      
+					<a href="#">Наши магазины</a>       
+					<a href="#">Доставка</a>    
+					<a href="#">Школа ремонта</a>         
+					<a href="#">Компания</a>      
+					<a href="#">Контакты</a>
+				</div>
+				<a href="#" class="nav-m--button nav-m--button_special">Акции</a>
+				<a href="#" class="nav-m--button nav-m--button_price">Скачать прайс</a>
+				<div class="nav-m__info">
+					<span class="nav-m--address">г. Барнаул, проезд Южный, 10, корпус 1<br> пн-чт: 8.00-17.00, пт: 8.00-16.00</span>
+					<span class="nav-m--phones">8 (3852) 502-409, 8 (903) 073-98-73</span>
+					<ul class="nav-m--modal">
+						<li><a href="#" data-open="call">Заказать звонок</a></li>
+						<li><a href="#" data-open="ask">Задать вопрос</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="nav-m__row" data-state="1">
+			<a href="#" class="nav-m--back" data-state-set="0"><span><em>Каталог</em></span></a>
+			<div class="nav-m__content">
+				<div class="nav-m__catalog">
+					<a href="#">Панели (ПВХ, Мдф)</a>
+					<a href="#">Лакокрасочные материалы</a>
+					<a href="#">Авто Kerry</a>
+					<a href="#">Инстумент</a>
+					<a href="#">Деревянный погонаж</a>
+					<a href="#">Крепеж</a>
+					<a href="#" data-state-set="1-1">Монтажные пены, герметики, жидкие гвозди</a>
+					<a href="#">Линолеум</a>
+					<a href="#">Плинтус напольный</a>
+					<a href="#">Погонаж (ПВХ)</a>
+					<a href="#">Сухие смеси</a>
+					<a href="#">Тепло-гидро-пароизоляция</a>
+				</div>
+			</div>
+		</div>
+		<div class="nav-m__row" data-state="1-1">
+			<a href="#" class="nav-m--back" data-state-set="1"><span><em>Монтажные пены, герметики, жидкие гвозди</em></span></a>
+			<div class="nav-m__content">
+				<div class="nav-m__catalog">
+					<a href="#">Защита для дерева</a>
+					<a href="#">Защита для кирпичных и бетонных покрытий</a>
+					<a href="#">Защитно-декоративные составы</a>
+					<a href="#">Лак</a>
+					<a href="#">Олифа</a>
+					<a href="#">Огнебиозащита</a>
+					<a href="#">Олифа и кузбасслак</a>
+				</div>
+			</div>
+		</div>
+		<div class="nav-m__row" data-state="lk">
+			<a href="#" class="nav-m--back" data-state-set="0"><span><em>Личный кабинет</em></span></a>
+			<div class="nav-m__content">
+				<div class="nav-m__catalog">
+					<a href="#">Вход</a>
+					<a href="#">Регистрация</a>
+					<a href="#">Личный кабинет</a>
+					<a href="#">Корзина</a>
+					<a href="#">Мои заказы</a>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="./js/easing.js"></script>
 	<script src="./js/jcarousel.js"></script>
