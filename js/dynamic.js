@@ -66,8 +66,14 @@
 						$(this).clone().insertAfter($('.benefits-b > div > ul a[href="'+$(this).attr('data-tab')+'"]').parents('li'));
 					});
 				}
+				if ( $('[data-nav-movable]').length ) {
+					$('[data-parent-container]').append('<ul class="nav-cloned"></ul>');
+					$('[data-nav-movable]').each(function() {
+						$(this).clone().appendTo($('.nav-cloned'));
+					});
+				}
 			} else {
-				$('.menu-open, .benefits-b > div > ul [data-tab]').remove();
+				$('.menu-open, .benefits-b > div > ul [data-tab], .nav-cloned').remove();
 				if ( $('.main .rc .school-p.mobile-visible').length && $('.main .rc').length ) {
 					$('.school-p').detach().appendTo($('.main .lc'));
 				}
@@ -387,7 +393,7 @@
 			rcBreadcrumbs();
 		}
 	});
-	$(window).on('load', function() {
+	$(window).on('resize load', function() {
 		if ( $('.school-b').length > 0 ) {
 			$('.school-b .grid li h5 em').each(function() {
 				if ( $(this).height() > 20 ) {
