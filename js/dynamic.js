@@ -147,6 +147,7 @@
 				}, 500);
 				$(this).find('span').text('Свернуть');
 				isOpen = true;
+				$(this).addClass('is-opened');
 			} else {
 				$('footer').stop().animate({
 					'height': f+'px',
@@ -157,6 +158,7 @@
 				}, 500);
 				isOpen = false;
 				$(this).find('span').text('Карта');
+				$(this).removeClass('is-opened');
 			}
 		});
 		$(window).on('resize', _.debounce(function() {

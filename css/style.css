@@ -1781,6 +1781,21 @@ footer .open-map {
 	margin:-2px 0 0 -44px;
 	background:url('../img/map_open_icon.svg') no-repeat center top;
 }
+footer .open-map:after {
+	content:'';
+	position:absolute;
+	left:50%;
+	top:31px;
+	width:19px;
+	height:7px;
+	margin-left:-9px;
+	background:url('../img/map_open_arrow.svg') no-repeat 0 0;
+}
+footer .open-map.is-opened:after {
+	margin-top:1px;
+	-webkit-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
 footer .open-map span {
 	position:absolute;
 	left:0;
