@@ -2064,6 +2064,11 @@ form.standart button:hover {
 	padding:0;
 	margin:0 0 23px;
 }
+.school-b img {
+	max-width:100%;
+	height:auto;
+	margin:0 0 22px;
+}
 .school-b img.left {
 	float:left;
 	margin:5px 26px 8px 0;
